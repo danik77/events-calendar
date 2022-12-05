@@ -1,0 +1,162 @@
+@import "../../assets/styles/constants.scss";
+
+.filter {
+	display: flex;
+	margin-bottom: 40px;
+
+	&__item:not(last-child) {
+		margin-right: 24px;
+	}
+
+	&__item {
+		border-radius: 16px;
+		padding: 4px 16px;
+		cursor: pointer;
+	}
+
+	&__red {
+		background: rgba($red, 0.16);
+		color: $red;
+
+		&_active {
+			background: $red;
+			color: $black;
+		}
+	}
+
+	&__yellow {
+		background: rgba($yellow, 0.16);
+		color: $yellow;
+
+		&_active {
+			background: $yellow;
+			color: $black;
+		}
+	}
+
+	&__blue {
+		background: rgba($blue, 0.16);
+		color: $blue;
+
+		&_active {
+			background: $blue;
+			color: $black;
+		}
+	}
+
+	&__green {
+		background: rgba($green, 0.16);
+		color: $green;
+
+		&_active {
+			background: $green;
+			color: $black;
+		}
+	}
+}
+
+.markers {
+	position: absolute;
+	display: flex;
+	bottom: 0px;
+}
+
+.markers__item {
+	height: 6px;
+	width: 6px;
+	margin: 0px 1px;
+	border-radius: 6px;
+}
+
+.red {
+	background: $red;
+}
+
+.yellow {
+	background: $yellow;
+}
+
+.blue {
+	background: $blue;
+}
+
+.green {
+	background: $green;
+}
+
+.event {
+	margin-bottom: 24px;
+	border-top: $border;
+
+	&__red {
+		color: $red;
+	}
+
+	&__yellow {
+		color: $yellow;
+	}
+
+	&__blue {
+		color: $blue;
+	}
+
+	&__green {
+		color: $green;
+	}
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+		position: relative;
+		padding-top: 26px;
+	}
+
+	&__cancelIcon {
+		position: absolute;
+		right: 4px;
+		top: 20px;
+	}
+
+	&__desc {
+		text-align: left;
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 200;
+		max-width: 312px;
+
+		& p {
+			margin-top: 0px;
+			margin-bottom: 7px;
+		}
+	}
+
+	&__type {
+		border-radius: 16px;
+		padding: 2px 8px;
+		font-size: 14px;
+		font-weight: 400;
+		width: max-content;
+	}
+
+	&__datetime {
+		display: flex;
+		align-items: center;
+		padding-right: 5px;
+		width: max-content;
+	}
+
+	&__location {
+		color: $grey;
+		text-align: left;
+		margin-top: 0px;
+		margin-bottom: 8px;
+	}
+
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: self-start;
+		margin-bottom: 24px;
+	}
+}

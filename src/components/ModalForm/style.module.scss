@@ -1,0 +1,85 @@
+@import "../../assets/styles/constants.scss";
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 250, 251, 0.2);
+  backdrop-filter: blur(2px);
+  z-index: 2;
+  position: fixed;
+}
+
+.modalForm {
+  z-index: 3;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 552px;
+  background: $lightBlack;
+  padding: 24px;
+  box-sizing: border-box;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: $border;
+  }
+
+  & form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & input,
+  & textarea,
+  & select {
+    color: $grey;
+    background: rgba(255, 250, 251, 0.04);
+    padding: 10px 12px;
+    margin-bottom: 24px;
+    border: none;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: "Lexend";
+  }
+
+  & select {
+    color: $white;
+  }
+
+  & select option {
+    background: $lightBlack;
+  }
+
+  & textarea {
+    height: 80px;
+  }
+
+  &__datetime {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  &__date {
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+  }
+
+  & &__time {
+    flex: 1 1 auto;
+    margin-bottom: 0px;
+  }
+
+  &__buttons {
+    text-align: right;
+  }
+}
