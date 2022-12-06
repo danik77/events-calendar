@@ -1,0 +1,10 @@
+@import "../../../assets/styles/constants.scss";
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: $border;
+    padding-bottom: 24px;
+    margin-bottom: 35px;
+    padding-top: 14px;
+}

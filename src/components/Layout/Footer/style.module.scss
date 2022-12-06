@@ -1,0 +1,14 @@
+@import "../../../assets/styles/constants.scss";
+
+.footer {
+	text-align: center;
+	padding-bottom:24px; 
+
+&__copyright {
+	color:$grey;
+	font-weight: 200;
+font-size: 14px;
+line-height: 14px;
+}
+
+}
